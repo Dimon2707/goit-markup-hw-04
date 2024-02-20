@@ -209,6 +209,34 @@ img {
     margin-left: 30px;
 }
 
+.feature-item::before {
+    display: block;
+    content: '';
+    height: 120px;
+    border-radius: 4px;
+    background-color: var(--secondary-background-color);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/astronaut\ 1.svg);
+}
+
 .feature-title {
     font-weight: 700;
     font-size: 14px;
@@ -293,6 +321,60 @@ img {
     color: var(--secondary-text-color);
 }
 
+.link-item {
+display: inline-flex;
+content: '';
+outline: 1px solid red;
+border-radius: 50%;
+width: 44px;
+height: 44px;
+
+
+}
+
+
+.instagram {
+    display: inline-flex;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/instagram.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.twitter {
+    display: inline-flex;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/twitter\ 1.svg);
+    background-size: contain;
+    background-position: centre;
+}
+
+.facebook {
+    display: inline-flex;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/facebook\ 1.svg);
+    background-size: contain;
+    background-position: centre;
+}
+
+.linkedin {
+    display: inline-flex;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/linkedin.svg);
+    background-size: contain;
+    background-position: centre;
+}
+
+
 /* section-footer */
 .footer {
     background-color: var(--hero-background-color);
@@ -344,7 +426,6 @@ address {
     letter-spacing: 0.03em;
     color: var(--footer-contact-color);
 }
-
 
 .footer-mail:hover, 
 .footer-mail:focus {
