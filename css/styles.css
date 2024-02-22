@@ -170,7 +170,7 @@ img {
 
 /* section-hero */
 .hero {
-    background: var(--hero-background-color);
+    /* background: var(--hero-background-color); */
     text-align: center;  
     padding-top: 200px;
     padding-bottom: 200px;
@@ -221,6 +221,10 @@ img {
 .overlay {
     max-width: 1600px;
     height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient( 
+        rgba(47, 48, 58, 0.4));
 }
 
 /* section-feature */
