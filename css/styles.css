@@ -174,8 +174,8 @@ img {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba (47, 48, 58, 0.4),rgba (47, 48, 58, 0.4)), url(../images/hero.jpg);
-    /* url(../images/hero.jpg); */
+    background-image: 
+    url(../images/hero.jpg);
     
     text-align: center;  
     padding-top: 200px;
@@ -360,63 +360,30 @@ img {
     color: var(--secondary-text-color);
 }
 
-.link-item .link {
-display: inline-flex;
-
-
-
+.links-list {
+    display: inline-flex;
+    align-items: center;
 }
-
 
 .instagram {
-    display: inline-flex;
-    content: '';
-    width: 44px;
-    height: 44px;
-    background-image: url(../images/instagram.svg);
-    background-color: #2196F3;
+    width: 100px;
+    height: 100px;
+    fill: #afb1b8;
+    outline: 1px solid red;
+    border-radius: 50%;
+    /* background-color: #2196F3;
     background-repeat: no-repeat; 
-    background-size: 20px;
-    background-position: centre; 
-    border-radius: 50%;
+    background-size: 20px;*/
+    background-position: centre;  
 }
 
-.twitter {
-    display: inline-flex;
-    content: '';
-    background-image: url(../images/twitter\ 1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: centre;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
+.instagram:hover {
+    background-color: #2196F3;
 }
 
-.facebook {
-    display: inline-flex;
-    content: '';
-    background-image: url(../images/facebook\ 1.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: centre;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
+.icon-instagram:hover{
+    fill: var(--white-color);
 }
-
-.linkedin {
-    display: inline-flex;
-    content: '';
-    background-image: url(../images/linkedin.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: centre;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-}
-
 
 /* section-footer */
 .footer {
