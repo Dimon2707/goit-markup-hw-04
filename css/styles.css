@@ -39,7 +39,8 @@ img {
 
 .feature,
 .direction,
-.team {
+.team,
+.clients {
     padding-top: 94px;
     padding-bottom: 94px; 
 }
@@ -130,27 +131,11 @@ img {
     padding-bottom: 32px;
 }
 
-.contact-list .icon-smartphone::before {
-    content: '';
-    display: inline-flex;
-    width: 10px;
-    height: 16px;
-    background-image: url(../images/smartphone.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.icon-envelope {
     margin-right: 10px;
 }
 
-.contact-list .icon-envelope::before {
-    content: '';
-    display: inline-flex;
-    width: 16px;
-    height: 12px;
-    background-image: url(../images/envelope.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.icon-smartphone {
     margin-right: 10px;
 }
 
@@ -161,6 +146,16 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
+/* .icon-envelope:hover,
+.icon-envelope:focus {
+    color: var(--accent-color);
+}
+
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+    color: var(--accent-color);
+} */
 
 .contact:hover, 
 .contact:focus {
@@ -224,14 +219,6 @@ img {
     cursor: pointer;
 }
 
-/* .overlay {
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image:url(../images/hero.jpg);
-} */
-
 /* section-feature */
 .feature {
     padding-bottom: 0;
@@ -248,33 +235,7 @@ img {
     margin-left: 30px;
 }
 
-.feature-item::before {
-    display: block;
-    content: '';
-    height: 120px;
-    border-radius: 4px;
-    background-color: var(--secondary-background-color);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 
-}
-
-.icon-antenna::before {
-    background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-    background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/astronaut\ 1.svg);
-}
 
 .feature-title {
     font-weight: 700;
@@ -358,23 +319,26 @@ img {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+
+    margin-bottom: 16px;
 }
 
 .links-list {
     display: inline-flex;
-    align-items: center;
+    padding: 0;
+    margin: 0;
+} 
+
+.links-list .link-item + .link-item {
+    margin-left: 10px;
 }
 
 .instagram {
-    width: 100px;
-    height: 100px;
+    display:inline-flex;
+    width: 44px;
+    height: 44px;
     fill: #afb1b8;
-    outline: 1px solid red;
     border-radius: 50%;
-    /* background-color: #2196F3;
-    background-repeat: no-repeat; 
-    background-size: 20px;*/
-    background-position: centre;  
 }
 
 .instagram:hover {
@@ -383,6 +347,79 @@ img {
 
 .icon-instagram:hover{
     fill: var(--white-color);
+}
+
+.twitter {
+    display:inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.twitter:hover {
+    background-color: #2196F3;
+    fill: var(--white-color);
+}
+
+.facebook {
+    display:inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.facebook:hover {
+    background-color: #2196F3;
+    fill: var(--white-color);
+}
+
+.linkedin {
+    display:inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.linkedin:hover {
+    background-color: #2196F3;
+    fill: var(--white-color);
+}
+
+.clients-title {
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+
+margin-bottom: 50px;
+}
+
+.clients-list {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+.clients-item {
+    display: inline-flex;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+}
+
+.clients-list .clients-item + .clients-item {
+    margin-left: 30px;
+}
+
+.clients-logo {
+    display: inline-flex;
+    outline: 1px solid red;
+    align-items: center;
+}
+
+.icon-logo {
+
 }
 
 /* section-footer */
