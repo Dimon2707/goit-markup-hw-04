@@ -353,7 +353,9 @@ img {
 }
 
 .links-list {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
 } 
@@ -362,8 +364,12 @@ img {
     margin-left: 10px;
 }
 
+.link-item {
+    text-align: center;
+}
+
 .instagram {
-    display:inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -373,10 +379,13 @@ img {
     border-radius: 50%;
 }
 
-.instagram:hover {
+.instagram:hover,
+.instagram:focus {
     background-color: var(--accent-color);
     fill: var(--white-color);
 }
+
+
 
 .twitter {
     display:inline-flex;
@@ -389,7 +398,8 @@ img {
     border-radius: 50%;
 }
 
-.twitter:hover {
+.twitter:hover,
+.twitter:focus {
     background-color: var(--accent-color);
     fill: var(--white-color);
 }
@@ -405,7 +415,8 @@ img {
     border-radius: 50%;
 }
 
-.facebook:hover {
+.facebook:hover,
+.facebook:focus {
     background-color: var(--accent-color);
     fill: var(--white-color);
 }
@@ -421,7 +432,8 @@ img {
     border-radius: 50%;
 }
 
-.linkedin:hover {
+.linkedin:hover,
+.linkedin:focus{
     background-color: var(--accent-color);
     fill: var(--white-color);
 }
@@ -451,10 +463,6 @@ margin-bottom: 50px;
     height: 92px;
 }
 
-.clients-item:hover {
-    border: 1px solid var(--accent-color);
-    fill: var(--accent-color);
-}
 
 .clients-list .clients-item + .clients-item {
     margin-left: 30px;
@@ -462,18 +470,24 @@ margin-bottom: 50px;
 
 .clients-logo {
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     fill: var(--icon-color);
+    width: 100%;
+    height: 100%;
 }
 
-.clients-logo:hover {
+.clients-logo:hover,
+.clients-logo:focus {
     fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /* section-footer */
 
 .footer .container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .footer {
 
@@ -576,7 +590,8 @@ address {
     border-radius: 50%;
 }
 
-.footer-instagram:hover {
+.footer-instagram:hover,
+.footer-instagram:focus {
     background-color: var(--accent-color);
 }
 
@@ -592,7 +607,8 @@ address {
     border-radius: 50%;
 }
 
-.footer-twitter:hover {
+.footer-twitter:hover,
+.footer-twitter:focus {
     background-color: var(--accent-color);
 }
 
@@ -608,7 +624,8 @@ address {
     border-radius: 50%;
 }
 
-.footer-facebook:hover {
+.footer-facebook:hover,
+.footer-facebook:focus {
     background-color: var(--accent-color);
 }
 
@@ -624,7 +641,8 @@ address {
     border-radius: 50%;
 }
 
-.footer-linkedin:hover {
+.footer-linkedin:hover,
+.footer-linkedin:focus {
     background-color: var(--accent-color);
 }
 
