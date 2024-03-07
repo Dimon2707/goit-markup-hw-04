@@ -138,18 +138,14 @@ img {
     padding-bottom: 32px; */
 }
 
-.contact .icon-envelope{
-    display: flex;
-}
-
 .icon-envelope {
     margin-right: 10px;
-    fill: var(--secondary-text-color);
+    fill: currentColor;
 }
 
 .icon-smartphone {
     margin-right: 10px;
-    fill: var(--secondary-text-color);
+    fill: currentColor;
 }
 
 .contact {
@@ -160,7 +156,7 @@ img {
     text-decoration: none;
 }
 
-.icon-envelope:hover,
+/* .icon-envelope:hover,
 .icon-envelope:focus {
     fill: var(--accent-color);
     color: var(--accent-color);
@@ -170,7 +166,7 @@ img {
 .icon-smartphone:focus {
     fill: var(--accent-color);
     color: var(--accent-color);
-}
+} */
 
 .contact:hover, 
 .contact:focus {
@@ -475,6 +471,7 @@ margin-bottom: 50px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     fill: var(--icon-color);
     width: 100%;
     height: 100%;
