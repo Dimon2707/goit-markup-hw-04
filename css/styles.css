@@ -489,6 +489,11 @@ margin-bottom: 50px;
     display: flex;
     align-items: baseline;
 }
+
+.adress {
+    margin-right: 70px;
+}
+
 .footer {
 
     background-color: var(--hero-background-color);
@@ -510,7 +515,6 @@ margin-bottom: 50px;
 
 address {
     margin-top: 20px;
-    margin-right: 70px;
 }
 
 .footer p{
